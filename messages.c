@@ -66,12 +66,13 @@ static const char *info_strings[] = {
 char *get_messages()
 {
 	char *buffer;
+	int i;
 
 	/* Should be large enough for all strings. */
 	buffer = malloc(8192);
 	buffer[0] = '\0';
 
-	for (int i = 0; i <= ERR_DATE_OUT_OF_RANGE; i++)
+	for (i = 0; i <= ERR_DATE_OUT_OF_RANGE; i++)
 	{
 		if (GetBit(errors, i))
 		{
@@ -79,7 +80,7 @@ char *get_messages()
 		}
 	}
 
-	for (int i = 0; i <= WARN_LONGER_39_MONTHS; i++)
+	for (i = 0; i <= WARN_LONGER_39_MONTHS; i++)
 	{
 		if (i == WARN_IA5)
 		{
@@ -91,7 +92,7 @@ char *get_messages()
 		}
 	}
 
-	for (int i = 0; i <= INF_CRL_NOT_URL; i++)
+	for (i = 0; i <= INF_CRL_NOT_URL; i++)
 	{
 		if (i == INF_STRING_NOT_CHECKED)
 		{
