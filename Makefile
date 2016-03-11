@@ -2,7 +2,7 @@ CC = gcc
 LD = $(CC)
 RM = rm
 
-CFLAGS = -g -Wall -O2
+CFLAGS = -g -Wall -O2 -std=c99 -D_POSIX_SOURCE
 LIBS = -lgnutls
 
 OBJECTS = x509lint.o checks.o messages.o
