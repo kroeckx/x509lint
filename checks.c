@@ -415,6 +415,7 @@ static bool CheckStringValid(ASN1_STRING *data, size_t *char_len)
 				{
 					ret = false;
 				}
+				(*char_len)--;	/* Don't count the BOM */
 			}
 			free(utf32);
 		}
