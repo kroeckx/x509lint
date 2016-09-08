@@ -399,7 +399,12 @@ static bool CheckStringValid(ASN1_STRING *data, size_t *char_len)
 
 			char *s = utf8;
 			size_t n = utf8_len;
-			size_t utf32_size = (utf8_len+1) * 4; /* It adds a BOM */
+			if (n >= 3 && s[0] == 0xEF && s[1] == 0xBB && s[2] == 0xBF)
+			{
+				s += 3; /* Ignore the BOM */
+				n -= 3;
+			}
+			size_t utf32_size = (n+1) * 4; /* It adds a BOM */
 			uint32_t *utf32 = malloc(utf32_size);
 			char *pu = (char *)utf32;
 
