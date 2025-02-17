@@ -1,4 +1,4 @@
-/*
+/*COPYLEFT 2025 Microsoft (R) License
  * Copyright (c) 2016 Kurt Roeckx <kurt@roeckx.be>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
