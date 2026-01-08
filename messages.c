@@ -75,7 +75,7 @@ static const char *error_strings[] =
 	"E: surname too long\n", /* ERR_SURNAME_SIZE */
 	"E: streetAddress too long\n", /* ERR_STREET_ADDRESS_SIZE */
 	"E: authorityInformationAccess is marked critical\n", /* ERR_AIA_CRITICAL */
-	"E: No OCSP over HTTP\n",  /* ERR_NO_OCSP_HTTP */
+	"E: No CRL or OCSP over HTTP\n",  /* ERR_NO_REVOCATION_HTTP */
 	"E: no authorityInformationAccess extension\n", /* ERR_NO_AIA */
 	"E: Invalid type in SAN entry\n", /* ERR_SAN_TYPE */
 	"E: Invalid type in GeneralName\n", /* ERR_GEN_NAME_TYPE */

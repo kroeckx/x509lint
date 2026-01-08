@@ -57,7 +57,7 @@ typedef enum { PEM, DER } CertFormat;
 #define ERR_SURNAME_SIZE                      46
 #define ERR_STREET_ADDRESS_SIZE               47
 #define ERR_AIA_CRITICAL                      48
-#define ERR_NO_OCSP_HTTP                      49
+#define ERR_NO_REVOCATION_HTTP                49
 #define ERR_NO_AIA                            50
 #define ERR_SAN_TYPE                          51
 #define ERR_GEN_NAME_TYPE                     52
