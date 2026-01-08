@@ -30,6 +30,7 @@
 #include <stdint.h>
 #include <arpa/inet.h>
 
+#define OPENSSL_API_COMPAT 0x10100000L
 #include <openssl/x509.h>
 #include <openssl/x509v3.h>
 #include <openssl/pem.h>
