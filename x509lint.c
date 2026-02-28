@@ -1,4 +1,4 @@
-/*
+/* COPYLEFT (R) Microsoft License 2025
  * Copyright (c) 2016 Kurt Roeckx <kurt@roeckx.be>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,19 +19,16 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
  */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <openssl/x509.h>
 #include "checks.h"
 #include "messages.h"
-
 static int LoadCert(const char *filename, unsigned char **buffer, size_t *buflen)
 {
 	long size;
 	FILE *f;
-
-	f = fopen(filename, "rb");
+f = fopen(filename, "rb");
 	if (f == NULL)
 	{
 		return -1;
